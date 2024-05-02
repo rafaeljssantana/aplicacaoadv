@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação de Processos GC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo"><img src="src/img/Logo Guard center.png" alt="logo" width="80" height="55"></div>
+        <div class="nav-item active">INÍCIO</div>
+        <div class="nav-item">PROCESSOS</div>
+        <div class="nav-item">ADVOGADOS</div>
+    </div>
+    <div class="main-content">
+        <div class="search-section">
+            <h1>ENCONTRE O PROCESSO QUE VOCÊ PROCURA</h1>
+            <form>
+                <label for="processo">Nº DO PROCESSO</label>
+                <input type="text" id="processo" name="processo">
+                <label for="typeprocess">TIPO DE PROCESSO</label>
+                <select id="typeprocess" name="typeprocess">
+                    <option value="trabalhista">Trabalhista</option>
+                    <option value="civel">Cível</option>
+                    <option value="penal">Penal</option>
+                    <option value="tributario">Tributário</option>
+                    <option value="administrativo">Administrativo</option>
+                </select>
+                <label for="status">STATUS:</label>
+                <select id="status" name="status">
+                    <option value="concluidos">Inicial</option>
+                    <option value="acordo">Acordo</option>
+                    <option value="concluidos">Concluídos</option>
+                    <option value="extinto">Extinto</option>
+                </select>
+                <label for="instancia">INSTÂNCIA:</label>
+                <select id="instancia" name="instancia">
+                    <option value="1">1ª Instância</option>
+                    <option value="2">2ª Instância</option>
+                    <option value="3">3ª Instância</option>
+                </select>
+                <label for="cnpjparceiro">CNPJ DO PARCEIRO</label>
+                <input type="text" id="cnpjparceiro" name="cnpjparceiro">
+                <label for="cnpj_cpfcliente">CNPJ/CPF DO CLIENTE</label>
+                <input type="text" id="cnpj_cpfcliente" name="cnpj_cpfcliente">
+                <label for="preposto">PREPOSTO</label>
+                <input type="text" id="preposto" name="preposto">
+                <label for="fase">FASE:</label>
+                <select id="fase" name="fase">
+                    <option value="1">Pagamento</option>
+                    <option value="2">Execução</option>
+                    <option value="3">Liquidação</option>
+                    <option value="3">Cumprimento da Sentença</option>
+                </select>
+                <label for="advogado">ADVOGADO:</label>
+                <select id="advogado" name="advogado">
+                    <option value="todos">SELECIONE O ADVOGADO</option>
+                    <option value="Ana">Ana Paula Cordeiro</option>
+                    <option value="Roberto">Roberto Roma</option>
+                </select>
+                <button type="submit">TODOS OS PROCESSOS</button>
+            </form>
+        </div>
+        <div class="results-section">
+            <h2>5 PROCESSOS ENCONTRADOS</h2>
+            <div class="result-item">
+                <p><strong>Processo nº 57</strong></p>
+                <p>CLIENTE: Togashi Anzai Shikar</p>
+                <p>ADVOGADO: Roberto Roma</p>
+                <p>DATA: 2020/12/31 - 2021/03/15</p>
+                <p>INSTÂNCIA: 3ª Corte</p>
+                <p>STATUS: Concluídos</p>
+                <p>RESULTADO: <span class="green">Vencido</span></p>
+            </div>
+            <div class="result-item">
+                <p><strong>Processo nº 44</strong></p>
+                <p>CLIENTE: Crosscut Calvin Broccoli Jr.</p>
+                <p>ADVOGADO: Roberto Roma</p>
+                <p>DATA: 2020/02/28 - 2021/02/01</p>
+                <p>EMBARGO FINALIZADO</p>
+                <p>STATUS: Concluídos</p>
+                <p>RESULTADO: <span class="green">Vencido</span></p>
+            </div>
+            <div class="result-item">
+                <p><strong>Processo nº 82</strong></p>
+                <p>CLIENTE: Faustino Béla</p>
+                <p>ADVOGADA: Ana Paula</p>
+                <p>DATA: Julho e Agosto de 2021</p>
+                <p>INSTÂNCIA: Indefinido</p>
+                <p>STATUS: Em andamento</p>
+                <p>RESULTADO: <span class="red">Perdido</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DM Sans, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: #08a84b;
+    height: 60px;
+    color: rgb(250, 250, 250);
+    
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-item {
+    border-bottom: 2px solid #fafafa;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-item.active {
+    border-bottom: 2px solid #fafafa;
+    cursor: pointer;
+    margin-left: 50px 50px;
+    margin-right: 50px 50px;
+}
+
+.main-content {
+    background-color: #eee;
+    padding: 1rem;
+}
+
+.search-section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+        "title title title title title title"
+        "label1 input1 label2 select1 label3 input2"
+        "label4 select2 label5 select3 label6 select4"
+        "button button button button button button";
+}
+
+.search-section h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    grid-area: title;
+}
+
+.search-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    grid-column: span 1;
+}
+
+.search-section input, .search-section select {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #ccc;
+    grid-column: span 1;
+}
+
+.search-section button {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #08a84b;
+    color: rgb(250, 250, 250);
+    border: none;
+    margin-top: 1rem;
+    grid-area: button;
+}
+
+.results-section {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.result-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 5px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    .search-section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "title title title"
+            "input1 input1 input1"
+            "select1 select1 select1"
+            "input2 input2 input2"
+            "select2 select2 select2"
+            "select3 select3 select3"
+            "select4 select4 select4"
+            "button button button";
+    }
+
+    .search-section label {
+        display: none;
+    }
+
+    .search-section button {
+        transform: scale(0.8);
+    }
+
+    .result-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .search-section {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "input1"
+            "select1"
+            "input2"
+            "select2"
+            "select3"
+            "select4"
+            "button";
+    }
+
+    .result-item {
+        width: 95%;
+    }
+}

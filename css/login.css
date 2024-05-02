@@ -1,0 +1,27 @@
+body{
+    background-color: aliceblue;
+}
+
+#container{
+    text-align: center;
+}
+
+#cabecalho{
+    margin-top: 100px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover{
+    background: rgb(68, 222, 51);
+}
+button a:hover{
+    color: rgb(12, 9, 112);
+}
