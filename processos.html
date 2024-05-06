@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cadastrar Processos</title>
+    <link rel="stylesheet" href="css/cabecalho.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <header>
+
+        <div id="cabecalho">
+            <img src="img/Img inicio.png" alt="">
+
+            <h1>Cadastrar Processos</h1>
+        </div>
+
+        </header>
+
+        <div class="formulario">
+            <form>
+
+                <span>Nº DO PROCESSO</span>
+        <input type="text" name="" id="">
+        <br>
+        <br>
+        <span>TIPO DE PROCESSO</span>
+        <select id="typeprocess" name="typeprocess">
+            <option value="trabalhista">SELECIONE</option>
+            <option value="trabalhista">Trabalhista</option>
+            <option value="civel">Cível</option>
+            <option value="penal">Penal</option>
+            <option value="tributario">Tributário</option>
+            <option value="administrativo">Administrativo</option>
+        </select>
+        <br>
+        <br>
+
+        <span>STATUS</span> 
+        <select id="status" name="status"> 
+            <option value="concluidos">SELECIONE</option>
+            <option value="concluidos">Inicial</option>
+            <option value="acordo">Acordo</option>
+            <option value="concluidos">Concluídos</option>
+            <option value="extinto">Extinto</option> 
+        </select>
+        <br>
+        <br>
+
+        <span>INSTÂNCIA</span>
+        <select id="instancia" name="instancia">
+            <option value="1">SELECIONE</option>
+            <option value="1">1ª Instância</option>
+            <option value="2">2ª Instância</option>
+            <option value="3">3ª Instância</option>
+        </select>
+        <br>
+        <br>
+
+        <span>ADVOGADOS:</span>
+        <select id="advogado" name="advogado">
+            <option value="todos">SELECIONE</option>
+            <option value="Ana">Ana Paula Cordeiro</option>
+            <option value="Roberto">Roberto Roma</option>
+        </select>
+        <br>
+        <br>
+
+        <div class="tabela-secound"> <!--Início da tabela 2-->
+            <span>CNPJ DO PARCEIRO</span>
+            <input type="text" id="cnpjparceiro" name="cnpjparceiro">
+            <br>
+            <br>
+            <span>CNPJ DO CLIENTE</span>
+            <input type="text" id="cnpj_cpfcliente" name="cnpj_cpfcliente">
+            <br>
+            <br>
+    
+            <span>PREPOSTO</span>
+            <input type="text" id="preposto" name="preposto">
+            <br>
+            <br>
+    
+            <span>FASE:</span>
+            <select id="fase" name="fase">
+                <option value="1">Pagamento</option>
+                <option value="2">Execução</option>
+                <option value="3">Liquidação</option>
+                <option value="3">Cumprimento da Sentença</option>
+            </select>
+            <br>
+            <br>
+            </div>
+
+            </form>
+            <button>Cadastrar</button>
+
+        </div> <!--Final do formulário-->
+    
+        </div> <!--Final do container-->
+        
+
+
+
+</body>
+</html>
