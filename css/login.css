@@ -1,27 +1,79 @@
-body{
-    background-color: aliceblue;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-#container{
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/*-----------------------------------*/
+/*geral*/
+.text-center {
     text-align: center;
 }
 
-#cabecalho{
-    margin-top: 100px;
+.margin-top-40{
+    margin-top: 40px;
+}
+/*-----------------------------------*/
+
+.container-cabecalho{
+    text-align: center;
+    padding: 20px;
+    background-color: #072650;
 }
 
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.container-cabecalho h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #84bce9
 }
 
-button a {
+/*----------------------------------*/
+.login{
+    background-color: #1d173b;
+    overflow: auto;
+}
+
+.login .detalhelogin{
+    float: center;
+    margin: 100px auto;
+    background-color: #061f35;
+    width: 20%;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #97b9d6;
+    font-weight: bold;
+}
+
+.login .container-botao-entrar{
+    float: none;
+    display: block;
+    max-width: 200px;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: #477fad;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.login .container-botao-entrar:hover{
+    background-color: white;
     color: black;
 }
 
-button:hover{
-    background: rgb(68, 222, 51);
-}
-button a:hover{
-    color: rgb(12, 9, 112);
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #1d173b;
+    color: #97b9d6;
 }

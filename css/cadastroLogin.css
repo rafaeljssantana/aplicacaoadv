@@ -17,6 +17,7 @@ body{
 .margin-top-40{
     margin-top: 40px;
 }
+
 /*-----------------------------------*/
 
 .container-cabecalho{
@@ -31,19 +32,18 @@ body{
     color: #84bce9
 }
 
-/*----------------------------------*/
-.recuperacao{
+/*-----------------------------------*/
+
+.container-formcadastrologin{
     background-color: #1d173b;
     overflow: auto;
 }
 
-.recuperacao .detalherecuperacao{
+.container-formcadastrologin .cadastrologin{
     float: center;
-    margin: 100px auto;
-    background-color: #061f35;
-    width: 20%;
-    padding: 50px;
-    border-radius: 20px;
+    margin: 20px auto;
+    width: 50%;
+    padding: 15px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
@@ -51,10 +51,25 @@ body{
     font-weight: bold;
 }
 
-.recuperacao .container-botao-recuperacao{
-    float: none;
+.direito{
+    float: right;
+    font-size: 18px;
+    margin: 0px 10px;
+    font-family: 'Courier New', Courier, monospace
+    
+
+}
+.esquerda{
+    float: left;
+    font-size: 18px;
+    margin: 0px 10px;
+    font-family: 'Courier New', Courier, monospace
+    
+}
+
+.container-formcadastrologin .container-botao-cadastro{
     display: block;
-    max-width: 100px;
+    max-width: 200px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -66,7 +81,7 @@ body{
     font-weight: bold;
 }
 
-.recuperacao .container-botao-recuperacao:hover{
+.container-formcadastrologin .container-botao-cadastro:hover{
     background-color: white;
     color: black;
 }
