@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Cadastrar Processos</title>
-    <link rel="stylesheet" href="css/processos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação de Processos GC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Logo Guard center1.png" type="image/png">
 </head>
 
 <body>
+
     <!--cabeçalho e logo-->
     <header class="container-cabecalho">
         <a href="main.html">
             <img src="./img/Logo Guard center1.png" alt="logo" title="Guard Center">
         </a>
-        <h3>CADASTRO DE PROCESSOS</h3>
+        <h3>CONSULTA DE PROCESSOS</h3>
         <br>
     </header>
+
+    <!--barra de navegação-->
     <nav class="container-navegacao">
         <a href="main.html">Consulta de processos</a>
         <a href="advogados.html">Cadastro de advogados</a>
@@ -28,13 +32,15 @@
         </div>
     </nav>
 
+    <!--Preenchimento de formulário para pesquisa de processos-->
     <section class="container-formpesquisa">
         <article class="formulario">
-            <img src="img/quick_reference_20dp_FILL0_wght400_GRAD0_opsz20.png" class="icon" atl="iconePesquisa">
+            <img src="img/youtube_searched_for_20dp_FILL0_wght400_GRAD0_opsz20.png" class="icon" atl="iconePesquisa">
             <br>
-            <h3>CADASTRAR PROCESSO</h3>
+            <h3>PESQUISAR PROCESSO</h3>
             <br>
             <form>
+                <div class="left">
                 <span>Nº DO PROCESSO</span>
                 <select id="nprocesso" name="nprocesso">
                     <input type="number" name="" id="">
@@ -76,14 +82,16 @@
                 <br>
 
                 <span>ADVOGADOS:</span>
-                <select i d="advogado" name="advogado">
+                <select id="advogado" name="advogado">
                     <option value="todos">SELECIONE</option>
                     <option value="Ana">Ana Paula Cordeiro</option>
                     <option value="Roberto">Roberto Roma</option>
                 </select>
                 <br>
                 <br>
+                </div>
 
+                <div class="right">
                 <span>CNPJ DO PARCEIRO</span>
                 <select id="cnpjparceiro" name="cnpjparceiro">
                     <input type="number" id="cnpjparceiro" name="cnpjparceiro">
@@ -107,21 +115,23 @@
 
                 <span>FASE:</span>
                 <select id="fase" name="fase">
-                    <option val     ue="1">Pagamento</option>
+                    <option value="1">Pagamento</option>
                     <option value="2">Execução</option>
                     <option value="3">Liquidação</option>
                     <option value="3">Cumprimento da Sentença</option>
                 </select>
                 <br>
                 <br>
-                <section class="container-botao-pesquisa">
-                    <a href="">CADASTRAR</a>
-                </section>
+                </div>
             </form>
+            <section class="container-botao-pesquisa">
+                <a href="">BUSCAR</a>
+            </section>
         </article>
 
+        <!--resultado da pesquisa-->
         <section class="results-section">
-            <h2>PROCESSOS CADASTRADOS RECENTEMENTE</h2>
+            <h2>PROCESSOS ENCONTRADOS</h2>
             <div class="result-item">
                 <p><strong>Processo nº 57</strong></p>
                 <p>CLIENTE: Togashi Anzai Shikar</p>
@@ -151,8 +161,6 @@
             </div>
         </section>
     </section>
-    <!--resultado da pesquisa-->
-
 
     <!--rodapé-->
     <footer>

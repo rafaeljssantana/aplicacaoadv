@@ -4,163 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicação de Processos GC</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/Logo Guard center1.png" type="image/png">
+    <title>Aplicação de gestão de processos</title>
+    <link rel="stylesheet" href="css/login.css">
+
 </head>
 
 <body>
 
-    <!--cabeçalho e logo-->
     <header class="container-cabecalho">
-        <a href="index.html">
+        <a href="main.html">
             <img src="./img/Logo Guard center1.png" alt="logo" title="Guard Center">
         </a>
-        <h3>CONSULTA DE PROCESSOS</h3>
+        <h3>REALIZE O LOGIN</h3>
         <br>
     </header>
 
-    <!--barra de navegação-->
-    <nav class="container-navegacao">
-        <a href="index.html">Consulta de processos</a>
-        <a href="advogados.html">Cadastro de advogados</a>
-        <a href="processos.html">Cadastro de processos</a>
-        <div class="cadastrousuario">
-            <a href="cadastroLogin.html">
-                <img src="img/group_add_20dp_FILL0_wght400_GRAD0_opsz20.png" class="icon" alt="cadastrologin">
-            </a>
-        </div>
-    </nav>
+    <div class="login">
+        <article class="detalhelogin">
+        <form>
 
-    <!--Preenchimento de formulário para pesquisa de processos-->
-    <section class="container-formpesquisa">
-        <article class="formulario">
-            <img src="img/youtube_searched_for_20dp_FILL0_wght400_GRAD0_opsz20.png" class="icon" atl="iconePesquisa">
-            <br>
-            <h3>PESQUISAR PROCESSO</h3>
-            <br>
-            <form>
+            Login <input type="text" name="" id="nome"><br><br>
+            Senha <input type="password" name="" id="senha"><br><br><br><br>
 
-                <span>Nº DO PROCESSO</span>
-                <select id="nprocesso" name="nprocesso">
-                    <input type="number" name="" id="">
-                </select>
-                <br>
-                <br>
-
-                <span>TIPO DE PROCESSO</span>
-                <select id="typeprocess" name="typeprocess">
-                    <option value="trabalhista">SELECIONE</option>
-                    <option value="trabalhista">Trabalhista</option>
-                    <option value="civel">Cível</option>
-                    <option value="penal">Penal</option>
-                    <option value="tributario">Tributário</option>
-                    <option value="administrativo">Administrativo</option>
-                </select>
-                <br>
-                <br>
-
-                <span>STATUS</span>
-                <select id="status" name="status">
-                    <option value="concluidos">SELECIONE</option>
-                    <option value="concluidos">Inicial</option>
-                    <option value="acordo">Acordo</option>
-                    <option value="concluidos">Concluídos</option>
-                    <option value="extinto">Extinto</option>
-                </select>
-                <br>
-                <br>
-
-                <span>INSTÂNCIA</span>
-                <select id="instancia" name="instancia">
-                    <option value="1">SELECIONE</option>
-                    <option value="1">1ª Instância</option>
-                    <option value="2">2ª Instância</option>
-                    <option value="3">3ª Instância</option>
-                </select>
-                <br>
-                <br>
-
-                <span>ADVOGADOS:</span>
-                <select id="advogado" name="advogado">
-                    <option value="todos">SELECIONE</option>
-                    <option value="Ana">Ana Paula Cordeiro</option>
-                    <option value="Roberto">Roberto Roma</option>
-                </select>
-                <br>
-                <br>
-
-                <span>CNPJ DO PARCEIRO</span>
-                <select id="cnpjparceiro" name="cnpjparceiro">
-                    <input type="number" id="cnpjparceiro" name="cnpjparceiro">
-                </select>
-                <br>
-                <br>
-
-                <span>CNPJ DO CLIENTE</span>
-                <select id="cnpjcliente" name="cnpjcliente">
-                    <input type="number" id="cnpj_cpfcliente" name="cnpj_cpfcliente">
-                </select>
-                <br>
-                <br>
-
-                <span>PREPOSTO</span>
-                <select id="preposto" name="preposto">
-                    <input type="text" id="preposto" name="preposto">
-                </select>
-                <br>
-                <br>
-
-                <span>FASE:</span>
-                <select id="fase" name="fase">
-                    <option value="1">Pagamento</option>
-                    <option value="2">Execução</option>
-                    <option value="3">Liquidação</option>
-                    <option value="3">Cumprimento da Sentença</option>
-                </select>
-                <br>
-                <br>
-
-            </form>
-            <section class="container-botao-pesquisa">
-                <a href="">BUSCAR</a>
+            <section class="container-botao-entrar">
+                <a href="main.html">ENTRAR</a>
             </section>
+            <br><br>
+
+        </form>
+        <div>
+        <a href="cadastroLogin.html">Cadastre-se</a> <br>
+
+        </div>
+        <div>
+        <a href="recuperacao.html">Esqueceu a senha? Clique aqui!</a> <br><br>
+        </div>
         </article>
+    </div>
 
-        <!--resultado da pesquisa-->
-        <section class="results-section">
-            <h2>PROCESSOS ENCONTRADOS</h2>
-            <div class="result-item">
-                <p><strong>Processo nº 57</strong></p>
-                <p>CLIENTE: Togashi Anzai Shikar</p>
-                <p>ADVOGADO: Roberto Roma</p>
-                <p>DATA: 2020/12/31 - 2021/03/15</p>
-                <p>INSTÂNCIA: 3ª Corte</p>
-                <p>STATUS: Concluídos</p>
-                <p>RESULTADO: <span class="green">Vencido</span></p>
-            </div>
-            <div class="result-item">
-                <p><strong>Processo nº 44</strong></p>
-                <p>CLIENTE: Crosscut Calvin Broccoli Jr.</p>
-                <p>ADVOGADO: Roberto Roma</p>
-                <p>DATA: 2020/02/28 - 2021/02/01</p>
-                <p>EMBARGO FINALIZADO</p>
-                <p>STATUS: Concluídos</p>
-                <p>RESULTADO: <span class="green">Vencido</span></p>
-            </div>
-            <div class="result-item">
-                <p><strong>Processo nº 82</strong></p>
-                <p>CLIENTE: Faustino Béla</p>
-                <p>ADVOGADA: Ana Paula</p>
-                <p>DATA: Julho e Agosto de 2021</p>
-                <p>INSTÂNCIA: Indefinido</p>
-                <p>STATUS: Em andamento</p>
-                <p>RESULTADO: <span class="red">Perdido</span></p>
-            </div>
-        </section>
-    </section>
-
-    <!--rodapé-->
     <footer>
         AdvSistemProcess (Rafael/Ítalo) &copy; 2024 | &reg; Todos os direitos reservados.
     </footer>

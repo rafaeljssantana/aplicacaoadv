@@ -6,6 +6,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    overflow: auto;
 }
 
 /*-----------------------------------*/
@@ -34,6 +35,8 @@ body{
 
 /*-----------------------------------*/
 .container-navegacao{
+    overflow: auto;
+    display:flex;
     text-align: center;
     padding: 20px;
     background-color: #154070;
@@ -64,7 +67,7 @@ body{
 }
 
 .container-formpesquisa .formulario{
-    float: center;
+    overflow: auto;
     margin: 30px auto;
     background-color: #061f35;
     width: 70%;
@@ -83,18 +86,21 @@ body{
 }
 
 .container-formpesquisa .container-botao-pesquisa{
-    float: none;
+    overflow: auto;
+    float:none;
     display: block;
     max-width: 200px;
     text-decoration: none;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     background-color: #477fad;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 10px auto;
     border-radius: 15px;
     font-weight: bold;
+   
 }
 
 .container-formpesquisa .container-botao-pesquisa:hover{
